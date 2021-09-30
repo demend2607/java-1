@@ -1,3 +1,19 @@
-h2 {
-    color: #5D6AD8;
+.btn-block {
+    background-color: #5343;
+    padding: 10px;
+}
+
+button {
+    width: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 10%;
+}
+
+.some {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
 }
