@@ -5,24 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Document</title>
-    <style>
-        body {
-            height: 1000px;
-        }
-        
-        .box {
-            width: 150px;
-            height: 100px;
-            background-color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="">
+    <!-- ! Использование defer: сообщает браузеру прогружать страницу дальше и загружать скрипты в фоном режиме -->
+    <!-- ! Использование async: страница не ждет асинхронных скриптов и не ждут ни кого(прогрузки DON структуры(прогрузка страницы) и других скриптов) начинает свою работу сразу-->
+
+    <!-- <script async src="js/test.js"></script> -->
 </head>
 
 <body>
 
-    <div class="box">
-        Touch me!
-    </div>
+    <p>Hello World</p>
+    <p>Second Message</p>
+
 
     <script src="js/script.js"></script>
 </body>
