@@ -1,38 +1,25 @@
-const btn = document.querySelector('.btn');
+'use strict';
 
-let timerId, // Назначаем глобальную переменную для работы локально
-    i = 0;
+const now = new Date('2020-05-01'); // Create date and put in now
+// new Date.parse('2020-05-01');
 
-function myAnimation() {
-    const elem = document.querySelector('.box'); // Название элемента на странице сайта
-    let pos = 0; // Позиция старта функции
+console.log(now.setHours(40));
+console.log(now);
 
-    const id = setInterval(frame, 10);
+// console.log(now.getFullYear());
+// console.log(now.getMonth());
+// console.log(now.getDate());
+// console.log(now.getDay());
+// console.log(now.getUTCHours());
 
-    function frame() {
-        if (pos == 300) {
-            clearInterval(id);
-        } else {
-            pos++;
-            elem.style.top = pos + 'px';
-            elem.style.left = pos + 'px';
-        }
-    }
+// console.log(now.getTimezoneOffset());
+// console.log(now.getTime());
+
+let start = new Date();
+
+for (let i = 0; i < 100000; i++) {
+    let some = i ** 3;
 }
+let end = new Date();
 
-btn.addEventListener('click', myAnimation);
-
-// function logger() { // Остановка интервала после определенного количества повторений
-//     if (i === 3) {
-//         clearInterval(timerId);
-//     }
-//     console.log('text');
-//     i++;
-// }
-
-// Функция выполняется не мгновенно
-// Повторный вызов функции будет выполнятся после выполения предыдущей, а не через 500
-// let id = setTimeout(function log() { 
-//     console.log('Hello');
-//     id = setTimeout(log, 500);
-// }, 500);
+alert(`Цикл отработал за ${end - start} миллисекунд`);
